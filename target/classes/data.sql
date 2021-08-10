@@ -14,9 +14,9 @@ INSERT INTO public.talk (description, link, name) VALUES ('Surgeon and inventor 
 INSERT INTO public.talk (description, link, name) VALUES ('Can an artificial machine really think? For many, these have been vital considerations for the future of artificial intelligence.', 'https://www.youtube.com/watch?v=3wLqsRLvV-c&ab_channel=TED-Ed', 'he Turing test: Can a computer pass for a human?');
 
 
-INSERT INTO public.schedule (date_end, date_start, fk_room_id, fk_talk_id) VALUES ('2021-08-11 14:12:39.000000', '2021-08-10 12:12:58.000000', 2, 1);
-INSERT INTO public.schedule (date_end, date_start, fk_room_id, fk_talk_id) VALUES ('2021-08-12 14:00:00.000000', '2021-08-12 12:00:00.000000', 2, 2);
-INSERT INTO public.schedule (date_end, date_start, fk_room_id, fk_talk_id) VALUES ('2021-08-11 12:00:00.000000', '2021-08-11 14:00:00.000000', 1, 3);
+INSERT INTO public.schedule (date_end, date_start, room_id, fk_talk_id) VALUES ('2021-08-11 14:12:39.000000', '2021-08-10 12:12:58.000000', 2, 1);
+INSERT INTO public.schedule (date_end, date_start, room_id, fk_talk_id) VALUES ('2021-08-12 14:00:00.000000', '2021-08-12 12:00:00.000000', 2, 2);
+INSERT INTO public.schedule (date_end, date_start, room_id, fk_talk_id) VALUES ('2021-08-11 12:00:00.000000', '2021-08-11 14:00:00.000000', 1, 3);
 
 INSERT INTO public.user_talk (user_id, talks_id) VALUES (3, 1);
 INSERT INTO public.user_talk (user_id, talks_id) VALUES (3, 2);

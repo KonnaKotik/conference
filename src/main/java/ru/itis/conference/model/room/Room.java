@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import ru.itis.conference.model.Schedule;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -24,7 +25,7 @@ public class Room {
     @Enumerated(value = EnumType.STRING)
     private RoomName name;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "room")
-    private Schedule schedule;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "room", fetch = FetchType.LAZY)
+    private List<Schedule> schedule;
 
 }

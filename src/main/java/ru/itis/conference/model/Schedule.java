@@ -25,8 +25,8 @@ public class Schedule {
 
     private Date dateEnd;
 
-    @OneToOne
-    @JoinColumn(name = "fk_room_id", referencedColumnName = "room_id")
+    @ManyToOne
+    @JoinColumn(name = "room_id", nullable = false)
     private Room room;
 
     @OneToOne

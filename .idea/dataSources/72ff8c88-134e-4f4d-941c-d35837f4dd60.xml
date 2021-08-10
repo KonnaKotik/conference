@@ -790,12 +790,12 @@ true posixrules
     <database id="2" parent="1" name="conf">
       <ObjectId>16449</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>850</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1140</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|17040|17042|1
-sequence|table|17050|17052|1
-sequence|table|17057|17059|1
-sequence|table|17064|17066|1
+      <Relations>sequence|table|17787|17789|1
+sequence|table|17797|17799|1
+sequence|table|17804|17806|1
+sequence|table|17811|17813|1
 </Relations>
     </database>
     <database id="3" parent="1" name="conference ">
@@ -865,7 +865,7 @@ sequence|table|17064|17066|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>851</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1141</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="19" parent="2" name="heap">
@@ -936,108 +936,108 @@ sequence|table|17064|17066|1
     <language id="29" parent="2" name="plpgsql"/>
     <language id="30" parent="2" name="sql"/>
     <sequence id="31" parent="18" name="conference_user_id_seq">
-      <ObjectId>17040</ObjectId>
+      <ObjectId>17787</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="32" parent="18" name="room_room_id_seq">
-      <ObjectId>17050</ObjectId>
+      <ObjectId>17797</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>842</StateNumber>
+      <StateNumber>1131</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="33" parent="18" name="schedule_id_seq">
-      <ObjectId>17057</ObjectId>
+      <ObjectId>17804</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>843</StateNumber>
+      <StateNumber>1132</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="34" parent="18" name="talk_talk_id_seq">
-      <ObjectId>17064</ObjectId>
+      <ObjectId>17811</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>844</StateNumber>
+      <StateNumber>1133</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <table id="35" parent="18" name="conference_user">
-      <ObjectId>17042</ObjectId>
+      <ObjectId>17789</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>849</StateNumber>
+      <StateNumber>1138</StateNumber>
     </table>
     <table id="36" parent="18" name="room">
-      <ObjectId>17052</ObjectId>
+      <ObjectId>17799</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>846</StateNumber>
+      <StateNumber>1135</StateNumber>
     </table>
     <table id="37" parent="18" name="schedule">
-      <ObjectId>17059</ObjectId>
+      <ObjectId>17806</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>846</StateNumber>
+      <StateNumber>1135</StateNumber>
     </table>
     <table id="38" parent="18" name="talk">
-      <ObjectId>17066</ObjectId>
+      <ObjectId>17813</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>847</StateNumber>
+      <StateNumber>1136</StateNumber>
     </table>
     <table id="39" parent="18" name="user_talk">
-      <ObjectId>17074</ObjectId>
+      <ObjectId>17821</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>848</StateNumber>
+      <StateNumber>1137</StateNumber>
     </table>
     <column id="40" parent="35" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>20</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
     <column id="41" parent="35" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="42" parent="35" name="first_name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="43" parent="35" name="last_name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="44" parent="35" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="45" parent="35" name="user_role">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="46" parent="35" name="user_state">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>841</StateNumber>
+      <StateNumber>1130</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="47" parent="35" name="conference_user_pkey">
-      <ObjectId>17048</ObjectId>
-      <StateNumber>841</StateNumber>
+      <ObjectId>17795</ObjectId>
+      <StateNumber>1130</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="48" parent="35" name="conference_user_pkey">
-      <ObjectId>17049</ObjectId>
-      <StateNumber>841</StateNumber>
+      <ObjectId>17796</ObjectId>
+      <StateNumber>1130</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>conference_user_pkey</UnderlyingIndexName>
@@ -1046,26 +1046,26 @@ sequence|table|17064|17066|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>842</StateNumber>
+      <StateNumber>1131</StateNumber>
       <TypeId>20</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
     <column id="50" parent="36" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>842</StateNumber>
+      <StateNumber>1131</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="51" parent="36" name="room_pkey">
-      <ObjectId>17055</ObjectId>
-      <StateNumber>842</StateNumber>
+      <ObjectId>17802</ObjectId>
+      <StateNumber>1131</StateNumber>
       <ColNames>room_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="52" parent="36" name="room_pkey">
-      <ObjectId>17056</ObjectId>
-      <StateNumber>842</StateNumber>
+      <ObjectId>17803</ObjectId>
+      <StateNumber>1131</StateNumber>
       <ColNames>room_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>room_pkey</UnderlyingIndexName>
@@ -1074,63 +1074,64 @@ sequence|table|17064|17066|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>843</StateNumber>
+      <StateNumber>1132</StateNumber>
       <TypeId>20</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
     <column id="54" parent="37" name="date_end">
       <Position>2</Position>
       <DataType>timestamp|0s</DataType>
-      <StateNumber>843</StateNumber>
+      <StateNumber>1132</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="55" parent="37" name="date_start">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
-      <StateNumber>843</StateNumber>
+      <StateNumber>1132</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="56" parent="37" name="fk_room_id">
+    <column id="56" parent="37" name="room_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>843</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>1132</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="57" parent="37" name="fk_talk_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>843</StateNumber>
+      <StateNumber>1132</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="58" parent="37" name="schedule_pkey">
-      <ObjectId>17062</ObjectId>
-      <StateNumber>843</StateNumber>
+      <ObjectId>17809</ObjectId>
+      <StateNumber>1132</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="59" parent="37" name="schedule_pkey">
-      <ObjectId>17063</ObjectId>
-      <StateNumber>843</StateNumber>
+      <ObjectId>17810</ObjectId>
+      <StateNumber>1132</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>schedule_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="60" parent="37" name="fk27w8dfhsyo0l9jreyvl1pie0k">
-      <ObjectId>17077</ObjectId>
-      <StateNumber>846</StateNumber>
-      <ColNames>fk_room_id</ColNames>
-      <RefTableId>17052</RefTableId>
+    <foreign-key id="60" parent="37" name="fkh2hdhbss2x31ns719hka6enma">
+      <ObjectId>17824</ObjectId>
+      <StateNumber>1135</StateNumber>
+      <ColNames>room_id</ColNames>
+      <RefTableId>17799</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>room</RefTableName>
       <RefKeyName>room_pkey</RefKeyName>
       <RefColNames>room_id</RefColNames>
     </foreign-key>
     <foreign-key id="61" parent="37" name="fklqumkj08txbuustv8fpknyr96">
-      <ObjectId>17082</ObjectId>
-      <StateNumber>847</StateNumber>
+      <ObjectId>17829</ObjectId>
+      <StateNumber>1136</StateNumber>
       <ColNames>fk_talk_id</ColNames>
-      <RefTableId>17066</RefTableId>
+      <RefTableId>17813</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>talk</RefTableName>
       <RefKeyName>talk_pkey</RefKeyName>
@@ -1140,38 +1141,38 @@ sequence|table|17064|17066|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>844</StateNumber>
+      <StateNumber>1133</StateNumber>
       <TypeId>20</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
     <column id="63" parent="38" name="description">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>844</StateNumber>
+      <StateNumber>1133</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="64" parent="38" name="link">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>844</StateNumber>
+      <StateNumber>1133</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="65" parent="38" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>844</StateNumber>
+      <StateNumber>1133</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="66" parent="38" name="talk_pkey">
-      <ObjectId>17072</ObjectId>
-      <StateNumber>844</StateNumber>
+      <ObjectId>17819</ObjectId>
+      <StateNumber>1133</StateNumber>
       <ColNames>talk_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="67" parent="38" name="talk_pkey">
-      <ObjectId>17073</ObjectId>
-      <StateNumber>844</StateNumber>
+      <ObjectId>17820</ObjectId>
+      <StateNumber>1133</StateNumber>
       <ColNames>talk_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>talk_pkey</UnderlyingIndexName>
@@ -1180,31 +1181,31 @@ sequence|table|17064|17066|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>845</StateNumber>
+      <StateNumber>1134</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="69" parent="39" name="talks_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>845</StateNumber>
+      <StateNumber>1134</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <foreign-key id="70" parent="39" name="fkdq4e8imifvr9wble6xq33o5jw">
-      <ObjectId>17092</ObjectId>
-      <StateNumber>849</StateNumber>
+      <ObjectId>17839</ObjectId>
+      <StateNumber>1138</StateNumber>
       <ColNames>user_id</ColNames>
-      <RefTableId>17042</RefTableId>
+      <RefTableId>17789</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>conference_user</RefTableName>
       <RefKeyName>conference_user_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="71" parent="39" name="fk4qv2qtlgeeffl8jfu0h4gegxo">
-      <ObjectId>17087</ObjectId>
-      <StateNumber>848</StateNumber>
+      <ObjectId>17834</ObjectId>
+      <StateNumber>1137</StateNumber>
       <ColNames>talks_id</ColNames>
-      <RefTableId>17066</RefTableId>
+      <RefTableId>17813</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>talk</RefTableName>
       <RefKeyName>talk_pkey</RefKeyName>

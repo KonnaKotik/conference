@@ -27,13 +27,14 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void signUp(SignUpForm signUpForm) {
+    public boolean signUp(SignUpForm signUpForm) {
         if(!userRepository.existsByEmail(signUpForm.getEmail())) {
             signUpForm.setPassword(passwordEncoder.encode(signUpForm.getPassword()));
             User user = userMapper.convertSignUpFormToUser(signUpForm);
             user.setUserRole(UserRole.LISTENER);
             user.setUserState(UserState.ACTIVE);
             userRepository.save(user);
+            return true;
         } else {
             throw new BadCredentialsException("Email is already used");
         }
